@@ -228,16 +228,47 @@ a {
     text-align: center;
 }
 .cs-tryp {
-    background: turquoise;
+    background: turquoise;  
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.cs-tryp:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+
 }
 .cs-beauty {
     background: #b19cd9;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.cs-beauty:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
 }
 .cs-post {
-    background: #004A8E;
+    background: #004A8E;  
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.cs-post:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+
 }
 .cs-mfh {
-    background: teal;
+    background: teal;  
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+}
+.cs-mfh:hover {
+    animation-name: bounce;
+    animation-timing-function: ease;
+
 }
 .logo {
     position: relative;
@@ -375,10 +406,7 @@ footer p a:hover {
 }
  /* ANIMATIONS */
  @keyframes bounce {
-    0%   { transform: translateY(0); 
-    }
-    50%  { transform: translateY(-6px); 
-    }
-    100% { transform: translateY(0); 
-    }
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
   }
