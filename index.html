@@ -1,0 +1,135 @@
+<!-- Index -->
+
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head id="top">
+<title>Rianna Alli</title>
+
+<!-- Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS Links -->
+<link href="//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<!-- Javascript -->
+<script src="js/index.js"></script>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    /* Scroll button appearing when I on scroll */
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 20) {
+          $('.scrollButton').removeClass('no-display');
+      } else {
+          $('.scrollButton').addClass('no-display');
+      }
+    });
+
+    /* Smooth Scrolling */
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 500, function(){
+                window.location.hash = hash;
+            });
+        }
+      });
+    });
+</script>
+ 
+<!-- Webpage Icon -->
+<link rel="icon" type="image/png" href="images/Logo.png"/>
+
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Navigation -->
+        <div id="myDiv"></div>
+        <div class="hero">
+            <div class="header">
+                <a href="#"><img alt="Rianna Alli logo" src="images/Logo.png" class="ra-logo"></a>
+                <h3 class="medium content-web">Rianna Alli</h3>
+                <nav class="nav">
+                    <h5 class="option selected"><a href="#">work</a></h5>
+                    <h5 class="option"><a href="about.html">about</a></h5>
+                    <h5 class="option"><a href="images/Resources/RiannaAlli_Resume_2021.pdf" target="_blank">resume</a></h5>
+                </nav>
+            </div>
+        </header>
+
+            <!-- Title -->
+            <section class="c6">
+            <div class="title">
+                <div>
+                    <h2><span class="highlighted">Hello, I'm Rianna.</span></h2>
+                    <h3 class="medium">I design to solve problems, to empower people, and to create meaningful user experiences.</h3>
+                    <h3 class="medium" id="getInTouch">Get in touch!</h3>
+                    <div>
+                        <a href="https:\\www.linkedin.com/in/rianna-alli" target="_blank"><img alt="LinkedIn icon" src="images/Linkedin Button.png" class="titleIcons"></a>
+                        <a href="mailto:rianna.alli@gmail.com?subject=Hey!" target="_blank"><img alt="Email icon" src="images/Email Button.png" class="titleIcons"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="c12 content">
+
+            <!-- TRYP -->
+                <a href="#"><div class="cs cs-tryp">
+                <div class="cs-content">
+                    <img alt="TRYP Icon" src="images/Case Study Icons/black/tryp-plane-black.svg" class="logo">
+                    <h2>TRYP</h2>
+                    <h5 class="medium">Plan your travel better, together.</h5>
+                </div>
+            </div>
+        
+            <!-- Beauty Concierge -->
+            <a href="#"><div class="cs cs-beauty">
+                <div class="cs-content">
+                    <img alt="Beauty Concierge Icon" src="images/Case Study Icons/black/beauty-mirror-black.svg" class="logo">
+                    <h2>Beauty Concierge</h2>
+                    <h5 class="medium">The service, without the struggle.</h5>
+                </div>
+            </div></a>
+        
+            <!-- Canada Post -->
+            <a href="#"><div class="cs cs-post">
+                <div class="cs-content">
+                    <img alt="Canada Post Icon" src="images/Case Study Icons/black/canadapost-mail-black.svg" class="logo">
+                    <h2>Canada Post</h2>
+                    <h5 class="medium">Some copy about Canada Post.</h5>
+                </div>
+            </div></a>
+
+             <!-- My Friend's House -->
+             <a href="#"><div class="cs cs-mfh">
+                <div class="cs-content">
+                    <img alt="My Friend's House Icon" src="images/Case Study Icons/black/mfh-house-black.svg" class="logo">
+                    <h2>My Friend's House</h2>
+                    <h5 class="medium">Some copy about My Friend's House.</h5>
+                </div>
+            </div></a>
+        </main>
+
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>If you’re looking to work with me or want to just say hi, feel free to email me at <a href="mailto:rianna.alli@gmail.com?subject=Hey!" target="_blank">rianna.alli@gmail.com.</a></p>
+        </div>
+        <div class="footerLinks">
+            <a href="https:\\www.linkedin.com/in/rianna-alli" target="_blank"><img alt="LinkedIn icon" src="images/Linkedin Button.png" class="icons"></a>
+            <a href="mailto:rianna.alli@gmail.com?subject=Hey!" target="_blank"><img alt="Email icon" src="images/Email Button.png" class="icons"></a>
+        </div>
+        <a href="#top" class="content-web no-display scrollButton"></a>
+    </footer>
+</body>
+
+</html>

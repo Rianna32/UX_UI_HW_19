@@ -1,0 +1,384 @@
+@import url(https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+
+html {
+    color: black;
+    background: white;
+    overflow-x: hidden;
+    margin: 3vw 6vw;
+}
+
+/* TYPOGRAPHY */
+h1 {
+    font-family: "Circular Std Book", sans-serif;
+    font-size: 36px;    
+    font-weight: bold;
+    line-height: inherit;
+    margin: 0;
+}
+h2 {
+    font-family: "Circular Std Book", sans-serif;
+    font-size: 36px;    
+    font-weight: bold;
+    line-height: 150%;
+    margin: 0;
+}
+h3 {
+    font-family: "Circular Std Book", sans-serif;
+    font-size: 18px;    
+    font-weight: bold;
+    line-height: inherit;
+    margin: 0;
+}
+h4 {
+    font-family: "Circular Std Book", sans-serif;
+    font-size: 18px;    
+    font-weight: bold;
+    line-height: inherit;
+    margin: 0;
+}
+h5 {
+    font-family: "Circular Std Book", sans-serif;
+    font-size: 16px;    
+    font-weight: bold;
+    line-height: inherit;
+    margin: 0;
+}
+h6 {
+    font-family: "Circular Std Book", sans-serif;
+    font-size: 14px;    
+    font-weight: bold;
+    line-height: inherit;
+    margin: 0;
+}
+p, li {
+    font-family: "Circular Std Book", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 150%;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.28s;
+}
+@media screen and (min-width: 450px) {
+    h1 {
+        font-size: calc(36px + 36* ((100vw - 320px) / 680));
+    }
+    h2 {
+        font-size: calc(24px + 30 * ((100vw - 320px) / (680)));
+    }
+    h3 {
+        font-size: calc(18px + 18 * ((100vw - 320px) / (680)));
+    }
+    h4 {
+        font-size: calc(18px + 6 * ((100vw - 320px) / (680)));
+    }
+    h5 {
+        font-size: calc(16px + 4 * ((100vw - 320px) / (680)));
+    }
+    h6 {
+        font-size: calc(14px + 2 * ((100vw - 320px) / (680)));
+    }
+    p, li {
+        font-size: calc(18px + 6 * ((100vw - 320px) / (680)));
+    }
+}
+@media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 72px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    p, li {
+        font-size: 24px;
+    }
+}
+.medium {
+    font-weight: 500;
+}
+.link:hover {
+    opacity: 0.6;
+    transition: 0.28s;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+}
+.c12 {
+    grid-column: 2 / 12;
+}
+.c6 {
+    grid-column: 4 / 10;
+}
+.c6-left {
+    grid-column: 1 / 7;
+}
+.c6-right {
+    grid-column: 8 / 12;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+/* HEADER */
+.hero {
+    position: relative;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    line-height: 3em;
+}
+.ra-logo {
+    height: 3em;
+}
+.nav {
+    line-height: 3em;
+}
+.option {
+    display: inline;
+    margin-left: 5vw;
+    font-weight: normal;
+    color: #586069;
+}
+.selected {
+    font-weight: 500;
+    color: #f2b8b1;
+}
+.option:hover {
+    color: #f2b8b1;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+}
+.highlighted {
+    background: linear-gradient(0deg, #f2b8b1  50%, transparent 50%);
+  }
+#getInTouch {
+    margin-top: 16px;
+}
+.titleIcons {
+    display: inline-block;
+    margin-top: 16px;
+    margin-right: 8px;
+    height: 3em;
+    opacity: 0.45;
+    transition: 0.28s;
+}
+.titleIcons:hover {
+    opacity: 1;
+    transition: 0.28s;
+}
+/* BODY */
+.main {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.content {
+    display: grid;
+    grid-column-gap: 5vw;
+    grid-template-columns: auto;
+    grid-row-gap: 10vw;
+    grid-template-rows: auto auto auto;
+    position: relative;
+    margin-top: 3em;
+}
+.cs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    border-radius: 1.2em;
+    
+}
+.cs:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.cs h5 {
+    padding: 0 1em;
+}
+.cs-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cs-tryp {
+    background: turquoise;
+}
+.cs-beauty {
+    background: #b19cd9;
+}
+.cs-post {
+    background: #004A8E;
+}
+.cs-mfh {
+    background: teal;
+}
+.logo {
+    position: relative;
+    margin-bottom: 1.5em;
+    height: 17.5%;
+}
+/* FOOTER */
+footer {
+    display: flex;
+    margin-top: 3em;
+    line-height: 4em;
+    color:  #2F363D;
+}
+footer p a:hover {
+    color: #f2b8b1;
+}
+.footerLinks {
+    grid-column: 9/ 13;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+.icons {
+    display: inline-block;
+    margin-left: 1.5vw;
+    height: 3em;
+    opacity: 0.45;
+    transition: 0.28s;
+}
+.icons:hover {
+    opacity: 1;
+    transition: 0.28s;
+}
+/* RESPONSIVE */
+.content-web {
+    display: none;
+}
+.content-mobile {
+    display: inherit;
+}
+@media screen and (min-width: 550px) {
+    html {
+        margin: 3vw 0vw;
+    }
+    .content-web {
+        display: inline;
+    }
+    .content-mobile {
+        display: none;
+    }
+    /* GRID */
+    .grid {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    /* HEADER */
+    .hero {
+        margin-bottom: 3em;
+    }
+    .header {
+        margin-bottom: 1.5em;
+        line-height: 3em;
+        justify-content: space-between;
+    }
+    .ra-logo {
+        margin-right: 1.5em;
+        height: 3em;
+    }
+    .nav {
+        margin-left: auto;
+        line-height: 3em;
+    }
+    .option {
+        margin-left: 3vw;
+    }
+    
+    /* BODY */
+    .content {
+        grid-template-columns: auto auto;
+        grid-row-gap: 5vw;
+        margin-bottom: 3em;
+    }
+
+@media screen and (min-width: 1000px) {
+    .content-web {
+        display: inline;
+    }
+    
+    /* HEADER */
+    .selected {
+        font-weight: 500;
+        color:  #f2b8b1;
+    }
+}
+}
+ /* ABOUT */
+ .bio {
+     margin-top: 16px;
+ }
+ .avi {
+    height: 15vw;
+    width: 15vw;
+    margin-top: 16px;
+ }
+ .aboutMe {
+     padding-left: 80px;
+     padding-right: 80px;
+ }
+ /* SCROLL TO TOP */
+ .scrollButton {
+    position: fixed;
+    bottom: 11%;
+    right: 4em;
+    z-index: 99;
+    width: 2.5em;
+    height:2.5em;
+    cursor: pointer;
+    outline: none !important;
+    background: url(../images/scrollButton.png) center / contain;
+    opacity: 0.45;
+    transition: 0.28s;
+}
+.scrollButton:hover {
+    opacity: 1;
+    transition: 0.28s;
+}
+.scrollButton.no-display {
+    opacity: 0;
+}
+ /* ANIMATIONS */
+ @keyframes bounce {
+    0%   { transform: translateY(0); 
+    }
+    50%  { transform: translateY(-6px); 
+    }
+    100% { transform: translateY(0); 
+    }
+  }
